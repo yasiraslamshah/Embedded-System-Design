@@ -1,0 +1,24 @@
+Name     Yasir ;
+PartNo   00 ;
+Date     10/16/2017 ;
+Revision 01 ;
+Designer Engineer ;
+Company  university of colorado at boulder ;
+Assembly None ;
+Location Lab3 ;
+Device   g16v8a;
+
+/* *************** INPUT PINS *********************/
+PIN 5   =	A15; /* MSB OF FFFF */ 
+PIN 6   =   	A14; /*A14 IN PIN 6 AS INPUT*/ 
+PIN 7   =     A13; /*A14 IN PIN 6 AS INPUT*/ 
+PIN 8   =  	A12; /*A14 IN PIN 6 AS INPUT*/ 
+PIN 9   =     A11; /*A14 IN PIN 6 AS INPUT*/ 
+PIN 3   =     A10; /*A14 IN PIN 6 AS INPUT*/ 
+
+/* *************** OUTPUT PINS *********************/
+PIN 17    	=OUTPUT; /*OUTPUT PIN AS PIN 17                                 */ 
+OUTPUT=!((!A15)&(A14 # A13 # A12 # A11 # A10));  /*AND'ING NEG A15 WITH A SUMMATED OR OF A14-10 	*/
+
+
+

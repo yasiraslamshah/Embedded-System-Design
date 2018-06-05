@@ -1,0 +1,22 @@
+%SIGNAL
+PIN   3 =  A10 
+PIN   9 =  A11 
+PIN   8 =  A12 
+PIN   7 =  A13 
+PIN   6 =  A14 
+PIN   5 =  A15 
+PIN  17 =  OUTPUT 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+OUTPUT =>
+    A14 & !A15
+  # A13 & !A15
+  # A12 & !A15
+  # A11 & !A15
+  # A10 & !A15
+
+%END
